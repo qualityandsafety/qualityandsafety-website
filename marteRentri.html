@@ -2,8 +2,8 @@
 <html lang="it">
 <head>
     <meta charset="utf-8">
-    <title>Conservazione a Norma con RENTRI | Quality & Safety</title>
-    <meta name="description" content="Servizio certificato di conservazione digitale a norma per documenti con RENTRI. Validità legale garantita, tracciabilità completa e sicurezza dei dati. Registro Elettronico Nazionale sulla Tracciabilità dei Rifiuti">
+    <title>RENTRI - Gestione Tracciabilità Rifiuti | Quality & Safety</title>
+    <meta name="description" content="Registro Elettronico Nazionale per la Tracciabilità dei Rifiuti. Gestione documenti di trasporto, formulari e registri di carico e scarico rifiuti. Conservazione a norma da 5€/anno + IVA. Attiva subito!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.qualityandsafety.org/marteRentri.html" />
     
@@ -51,6 +51,92 @@
             color: var(--verde-qas);
             margin-bottom: 1rem;
         }
+        /* Stili per sezione prezzi */
+        .pricing-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 60px 0;
+            margin-top: -30px;
+            position: relative;
+            z-index: 1;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            border: 2px solid transparent;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(90, 156, 71, 0.2);
+            border-color: var(--verde-qas);
+        }
+        .pricing-card.featured {
+            border-color: var(--verde-qas);
+            border-width: 3px;
+            position: relative;
+        }
+        .price-main {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--verde-qas);
+            line-height: 1;
+        }
+        .price-period {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-left: 5px;
+        }
+        .price-iva {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        .price-includes {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .price-includes ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .price-includes li {
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .price-includes li:last-child {
+            border-bottom: none;
+        }
+        .price-includes li i {
+            color: var(--verde-qas);
+            margin-right: 10px;
+        }
+        .cta-button-main {
+            font-size: 1.2rem;
+            padding: 15px 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(90, 156, 71, 0.3);
+        }
+        .cta-button-main:hover {
+            box-shadow: 0 8px 25px rgba(90, 156, 71, 0.4);
+        }
+        .trust-badge {
+            text-align: center;
+            padding: 10px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        .trust-badge i {
+            color: var(--verde-qas);
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -74,11 +160,126 @@
     <section class="py-5 bg-primary text-white">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-4">Conservazione a Norma con RENTRI</h1>
-                    <p class="lead">Garantisci validità legale e sicurezza ai tuoi documenti digitali con il nostro servizio certificato.</p>
-                    <a href="info.html" class="btn btn-light btn-lg mt-3">Richiedi informazioni</a>
-                    <a href="https://rentri.qualityandsafety.net/" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg mt-3 ml-2">Accedi al servizio</a>
+                <div class="col-lg-10 mx-auto text-center">
+                    <h1 class="display-4 mb-3">RENTRI - Registro Elettronico Nazionale per la Tracciabilità dei Rifiuti</h1>
+                    <p class="lead mb-4">Gestione documenti di trasporto, formulari e registri di carico e scarico rifiuti. Conservazione digitale a norma con validità legale garantita.</p>
+                    <a href="https://rentri.qualityandsafety.net/" class="btn btn-light btn-lg cta-button-main mt-3">
+                        <i class="fas fa-rocket mr-2"></i>Attiva Abbonamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione PREZZI - OTTIMIZZATA PER CONVERSIONI -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-3">Scegli il Piano che Fa per Te</h2>
+                    <p class="lead text-muted">Piano standard per la maggior parte delle aziende o soluzione personalizzata per volumi elevati</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Card Prezzo RENTRI Standard -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="pricing-card featured">
+                        <div class="text-center mb-4">
+                            <div class="mb-3">
+                                <i class="fas fa-recycle" style="font-size: 3.5rem; color: var(--verde-qas);"></i>
+                            </div>
+                            <h3 class="mb-2">RENTRI - Piano Standard</h3>
+                            <span class="badge badge-success mb-3" style="background-color: var(--verde-qas); font-size: 0.9rem; padding: 8px 20px;">
+                                <i class="fas fa-check-circle mr-2"></i>Tutto incluso
+                            </span>
+                            <div class="price-main">
+                                20,00 €<span class="price-period">/anno</span>
+                            </div>
+                            <div class="price-iva">+ IVA</div>
+                            <div class="mt-3" style="font-size: 0.9rem; color: #6c757d;">
+                                <i class="fas fa-info-circle mr-1"></i>
+                                Include: RENTRI (5€) + Servizio di Conservazione (15€)
+                            </div>
+                        </div>
+                        <div class="price-includes">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="mb-3" style="color: var(--verde-qas);">
+                                        <i class="fas fa-recycle mr-2"></i>RENTRI
+                                    </h5>
+                                    <ul>
+                                        <li><i class="fas fa-check-circle"></i> <strong>100 movimenti per singolo CER</strong></li>
+                                        <li><i class="fas fa-check-circle"></i> Gestione documenti di trasporto</li>
+                                        <li><i class="fas fa-check-circle"></i> Formulari e registri di carico/scarico</li>
+                                        <li><i class="fas fa-check-circle"></i> Registro Elettronico Nazionale</li>
+                                    </ul>
+                                    <h5 class="mb-3 mt-3" style="color: var(--verde-qas);">
+                                        <i class="fas fa-archive mr-2"></i>Servizio di Conservazione
+                                    </h5>
+                                    <ul>
+                                        <li><i class="fas fa-check-circle"></i> Conservazione digitale a norma</li>
+                                        <li><i class="fas fa-check-circle"></i> Validità legale garantita</li>
+                                        <li><i class="fas fa-check-circle"></i> Conformità AgID e eIDAS</li>
+                                        <li><i class="fas fa-check-circle"></i> Conservazione obbligatoria inclusa</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3 pt-3" style="border-top: 1px solid #dee2e6;">
+                                <ul style="margin-bottom: 0;">
+                                    <li><i class="fas fa-check-circle"></i> Rinnovo automatico annuale</li>
+                                    <li><i class="fas fa-check-circle"></i> Gestione tramite Stripe</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trust-badge mt-3 mb-3">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <strong>Importante:</strong> Il servizio di conservazione è incluso obbligatoriamente con RENTRI per garantire la conformità normativa.
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="https://rentri.qualityandsafety.net/" class="btn btn-primary btn-lg cta-button-main w-100">
+                                <i class="fas fa-rocket mr-2"></i>Attiva Abbonamento - 20€/anno + IVA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card Piano Custom/Enterprise -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="pricing-card">
+                        <div class="text-center mb-4">
+                            <div class="mb-3">
+                                <i class="fas fa-building" style="font-size: 3.5rem; color: #6c757d;"></i>
+                            </div>
+                            <h3 class="mb-2">RENTRI - Piano Enterprise</h3>
+                            <span class="badge badge-secondary mb-3" style="background-color: #6c757d; font-size: 0.9rem; padding: 8px 20px;">
+                                <i class="fas fa-star mr-2"></i>Personalizzato
+                            </span>
+                            <div class="price-main" style="font-size: 2.2rem;">
+                                Preventivo<span class="price-period" style="font-size: 1.5rem;"> Personalizzato</span>
+                            </div>
+                            <div class="mt-3" style="font-size: 0.95rem; color: #6c757d;">
+                                <i class="fas fa-info-circle mr-1"></i>
+                                Per aziende con volumi elevati di documenti
+                            </div>
+                        </div>
+                        <div class="price-includes">
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> <strong>Movimenti illimitati o quantità personalizzate</strong></li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> Tutte le funzionalità del piano standard</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> Conservazione digitale inclusa</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> Assistenza dedicata e supporto prioritario</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> Integrazioni personalizzate (API, PEC, Sistemi ERP)</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> Formazione personalizzata per il team</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> Account manager dedicato</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary"></i> Contratto personalizzato in base alle esigenze</li>
+                            </ul>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="mailto:info@qualityandsafety.org?subject=Richiesta Piano Enterprise RENTRI" class="btn btn-outline-primary btn-lg w-100" style="border-width: 2px; font-weight: 600;">
+                                <i class="fas fa-envelope mr-2"></i>Contattaci per un Preventivo
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,11 +343,16 @@
                 <div class="col-lg-6">
                     <h2 class="mb-4">Come funziona la conservazione con RENTRI</h2>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><i class="fas fa-check-circle text-primary mr-2"></i> Invio dei documenti via PEC o API</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary mr-2"></i> <strong>Caricamento semplice dei documenti</strong> tramite web app, PEC o API</li>
                         <li class="mb-3"><i class="fas fa-check-circle text-primary mr-2"></i> Verifica e apposizione della marca temporale</li>
                         <li class="mb-3"><i class="fas fa-check-circle text-primary mr-2"></i> Archiviazione in conformità alle normative</li>
                         <li class="mb-3"><i class="fas fa-check-circle text-primary mr-2"></i> Accesso immediato quando necessario</li>
                     </ul>
+                    <div class="mt-4">
+                        <a href="https://rentri.qualityandsafety.net/" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket mr-2"></i>Attiva Abbonamento Ora
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <!-- Spazio per l'immagine del processo -->
