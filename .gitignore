@@ -38,6 +38,7 @@ logs/
 
 # SpecStory
 .specstory/
+.specstory/**/*
 
 # Backup files
 *.bak
