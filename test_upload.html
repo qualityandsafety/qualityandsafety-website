@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Folder Upload Example</title>
+<style>
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+    }
+    body {
+        font-family: sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h1>Folder Upload</h1>
+    <label for="folder">Select folder:</label>
+    <input type="file" id="folder" webkitdirectory multiple />
+    <h2>Selected Files</h2>
+    <ul></ul>
+    <script>
+        function sendMessageToContainer(message) {
+
+            const inIframe = window.self !== window.top;
+
+
+            if (inIframe) {
+                window.top.postMessage(message);
+                console.log(' iframe postMessage');
+
+            } else {
+                if (window.flutter_inappwebview) {
+                window.flutter_inappwebview.callHandler(message);
+                console.log(' no iframe postMessage');
+                } else {
+                console.log('not in an iframe and no flutter binding found');
+                }
+            }
+            }
+
+        document.getElementById("folder").addEventListener("change", function(event) {
+            var output = document.querySelector("ul");
+            var files = event.target.files;
+            output.innerHTML = ""; // Clear the list every time new folder is selected
+            for (var i = 0; i < files.length; i++) {
+                var item = document.createElement("li");
+                item.innerHTML = files[i].webkitRelativePath;
+
+                output.appendChild(item);
+
+                var file = files[i];
+                // Converti il file in base64 per inviarlo
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var fileBase64 = e.target.result;
+                    // Invia il file a Flutter come stringa base64
+                
+                
+                
+                    //window.flutter_inappwebview.callHandler('fileUpload', fileBase64);
+                    sendMessageToContainer(file.webkitRelativePath);
+                    console.log('sendMessageToContainer');
+                };
+                reader.readAsDataURL(file);
+
+
+            }
+        }, false);
+    </script>
+<hr>
+Secondo form semplice che prova a fare l'upload
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="folder">Select folder:</label>
+    <input type="file" id="folder2" name="folder2" webkitdirectory multiple />
+    <button type="submit">Upload Files</button>
+</form>
+</body>
+</html>

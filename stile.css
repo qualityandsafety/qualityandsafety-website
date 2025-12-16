@@ -1,0 +1,37 @@
+.fondo {
+    border-top: solid;
+    border-top-color: #5bac26;
+    }
+    
+ .margine{
+    margin-top:15px;
+    }
+    
+ .margine2{
+    margin-top:100px;
+    }
+
+@font-face {
+   font-family: 'BAKSHEESHRegular';
+   src: url(BAKSHEESHRegular.eot);
+   src: local('BAKSHEESHRegular'), url('BAKSHEESHRegular.ttf') format('truetype');
+    }
+
+
+body {
+   font-family: BAKSHEESHRegular, Verdana, sans-serif;
+    }
+
+.margine3{
+    margin-top:40px;
+    }
+
+/* Footer: applica il bordo solo al contenitore interno
+   per evitare la barra a tutta larghezza */
+.page-footer.fondo {
+    border-top: none;
+}
+
+.page-footer.fondo > .container {
+    border-top: solid 1px #5bac26;
+}

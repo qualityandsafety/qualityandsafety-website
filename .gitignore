@@ -1,0 +1,50 @@
+# File di sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (se in futuro si aggiunge)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files
+dist/
+build/
+*.min.js
+*.min.css
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# SpecStory
+.specstory/
+
+# Backup files
+*.bak
+*.backup
+*_copy.html
+
+# Temporary files
+tmp/
+temp/
+*.tmp
