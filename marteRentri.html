@@ -513,7 +513,8 @@
         </div>
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 - 2026 Copyright: Quality and Safety<br>
+        <div class="footer-copyright text-center py-3">© 2019 - <span id='copyrightyear'></span> Copyright: Quality and
+            Safety<br>
             <!-- Iubenda privacy policy 2022-->
             <a href="https://www.iubenda.com/privacy-policy/14703267"
                 class="iubenda-white no-brand iubenda-noiframe iubenda-embed iubenda-noiframe "
@@ -532,6 +533,7 @@
 
         </div>
     </footer>
+    <script>document.getElementById('copyrightyear').innerHTML = (new Date()).getFullYear();</script>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
